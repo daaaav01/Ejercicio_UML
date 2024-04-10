@@ -1,0 +1,14 @@
+@startuml
+:User: --> (Use)
+"Main Admin" as Admin
+"Use the application" as (Use)
+Admin --> (Admin the application)
+Admin --> (Admin roles)
+(Admin roles) -- (Login)
+package System {
+    usecase "Admin the application"
+    usecase "Admin roles"
+    usecase "Login"
+    usecase "Use the application"
+}
+@enduml
